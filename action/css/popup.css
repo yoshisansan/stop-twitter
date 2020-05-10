@@ -1,0 +1,206 @@
+body {
+  width: 24rem;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #242424;
+  font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
+input[type="text"] {
+  width: 2.4rem;
+  outline: 0;
+  border: 0;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  letter-spacing: 0.16rem;
+  transition: 0.3s;
+}
+input[type="text"]:focus {
+  border-bottom: 1px solid #1DA1F2;
+}
+header {
+  height: 2.4rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin-top: -1.4rem;
+}
+.head-wrap {
+  text-align: center;
+  background-color: #1DA1F2;
+}
+.head-wrap__title {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: .08rem;
+}
+.main {
+  padding: .4rem;
+  margin-bottom: 2.4rem;
+}
+.main__set { 
+  margin-top: 2.4rem;
+  justify-items: center;
+}
+.main__set-wrap {
+  background-color: #e0e0e0;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 4px #e0e0e0;
+  height: 4rem;
+  line-height: 4rem;
+  width: 96%;
+  margin: 0 auto;
+  margin-bottom: .54rem;
+  position: relative;
+}
+.gray-bcg { background-color: #e0e0e0; }
+.blue-bcg { 
+  /* background-color: #f0fcff; */
+  animation: backgroundAnime 3s infinite;
+  -webkit-animation: backgroundAnime 3s infinite;
+  animation-direction: alternate;
+}
+@keyframes backgroundAnime {
+  0% { background: #e6f9ff; }
+  50% { background: #e0f8ff; }
+  100% { background: #ccf3ff; }
+}
+.main__set-radius {
+  border-radius: 50%;
+  background: #1D7DF2;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-left: .4rem;  
+  text-align: center;
+  align-items: center;
+}
+.main__set-number {
+  line-height: 3.2rem;
+}
+.main__set-timer-wrap {
+  display: inline;
+}
+.main__set-timer {
+  display: inline-block;
+}
+.main__set-timer p {
+  margin: 0;
+  padding: 0;
+  padding-left: .16rem;
+}
+.main__set-value {
+  display: inline-block;
+  height: 3.2rem;
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+}
+.main__set-value > p {
+  margin-left: 2rem;
+}
+.main__set-remove {
+  display: inline-block;
+  width: 100%;
+}
+.main__set-remove-x {
+  cursor: pointer;
+  display: inline-block;
+	width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  right: -1.6%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.main__set-remove-x::before,
+.main__set-remove-x::after {
+  background: #cfcfcf;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: 0.3s;
+  top: 50%;
+	left: 50%;
+	width: 84%;
+	height: 16%;
+	margin: -8% 0 0 -42%;
+}
+.main__set-remove-x::before {
+  transform: rotate(-45deg);
+}
+.main__set-remove-x::after {
+  transform: rotate(45deg);
+}
+.main__set-remove-x:hover:before,
+.main__set-remove-x:hover:after {
+  background: #E91E63;
+}
+.main__boxes {
+  display: block;
+  padding: 0 .8rem
+}
+.main__boxes > p {
+  margin: 1.6rem 0 .8rem 0;
+  font-size: 1.6rem;
+  color: #888;
+}
+.main__box {
+  display: inline-block;
+  padding: 0 .32rem 0rem;
+}
+.main__box-time {
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  width: 2rem;
+}
+.main__box-msg {
+  font-size: .88rem;
+  padding: 0 .24rem 0 0;
+}
+.main__box-colon {
+  padding: 0 .24rem;
+}
+.main__box-setting-button {
+  background-color: #1DA1F2;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  margin: .8rem .2rem .4rem .2rem;
+  line-height: 1.618;
+  letter-spacing: .08rem;
+  width: 3.6rem;
+
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.main__box-setting-button:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+.main__box-setting-button:focus {
+  outline: 0;
+}
+footer {
+  background-color: #e0e0e0;
+  height: 1.4rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  position: fixed;
+}
+footer p {
+  font-size: .8rem;
+  line-height: 1.4rem;
+  margin: 0;
+  padding-right: .8rem;
+  text-align: right;
+}

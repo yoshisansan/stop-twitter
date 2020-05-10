@@ -1,0 +1,45 @@
+<!-- 日本語と英語版を用意する -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="img/stop-twitter-on.png" />
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+  <title>STOP Twitter</title>
+</head>
+<body>
+  <div class="wrapper">
+  <div class="main-frame">
+    <div class="main-frame__wrap">
+      <div class="main-frame__img-wrap">
+        <img src="img/stoptwitter.png" alt="STOPtwitter小鳥" class="main-fram__image"> 
+      </div>
+      <div class="main-frame__message">
+        <p class="main-frame__message-setting">TwitterはSTOP中の時間帯です。</p>
+        <p class="main-frame__message-sub-title">知りたくなかった豆知識</p>
+        <p class="main-frame__message-random">これはランダムメッセージです</p>
+      </div>
+      <div class="motivation">
+        <button id="modalBtn" class="motivation-info">モチベーションボタン</button>
+      </div>
+    </div>
+    <div id="modalDom" class="modal">
+      <div id="modalClose" class="modal__close"></div>
+      <div class="modal__content">
+        <div class="modal__remove-wrap">
+          <div id="modalRemove" class="modal__remove"></div>
+        </div>
+        <iframe id="modal__youtube" class="modal__doit" src="https://www.youtube.com/embed/ZXsQAXx_ao0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>copyrights ©️ 2020 <a href="https://twitter.com/akifumiyoshimu" target="_blank" rel="nofollow noopener noreferrer">@akifumiyoshimu</a></p>
+  </footer>
+  </div>
+  <script src="js/indexPage.js"></script>
+  <script src="js/library/jquery.js"></script>
+</body>
+</html>
