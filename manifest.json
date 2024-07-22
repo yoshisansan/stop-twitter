@@ -19,7 +19,7 @@
     ]
   },
   "content_scripts": [{
-    "matches": ["https://twitter.com/*", "https://mobile.twitter.com/*", "https://tweetdeck.twitter.com/*"],
+    "matches": ["https://x.com/*", "https://mobile.x.com/*", "https://tweetdeck.x.com/*"],
     "all_frames": true,
     "run_at": "document_idle",
     "js": [
